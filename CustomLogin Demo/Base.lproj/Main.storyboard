@@ -66,7 +66,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cK9-ot-2Mk">
                                 <rect key="frame" x="40" y="84" width="334" height="320.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq4-Dk-PYM">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq4-Dk-PYM" userLabel="First Name">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -117,6 +117,14 @@
                         <viewLayoutGuide key="safeArea" id="i85-ON-eYd"/>
                     </view>
                     <navigationItem key="navigationItem" id="OuN-1P-WTg"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="PpV-ei-IB8" id="lsk-OO-w7h"/>
+                        <outlet property="errorLabel" destination="tcc-fI-taH" id="sVr-eM-wCk"/>
+                        <outlet property="firstNameTextField" destination="hq4-Dk-PYM" id="Ow0-BW-3H6"/>
+                        <outlet property="lastNameTextField" destination="3ji-fR-afB" id="Sbw-jT-6SC"/>
+                        <outlet property="passwordTextField" destination="JIK-8U-0LC" id="L6h-JJ-P8Q"/>
+                        <outlet property="signUpButton" destination="E02-ch-VUU" id="GSo-XE-7Gy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWw-r6-hgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,6 +157,9 @@
                                             <constraint firstAttribute="height" constant="40" id="64z-mh-Q3U"/>
                                         </constraints>
                                         <state key="normal" title="LOGIN"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="qb9-gW-na9" eventType="touchUpInside" id="HWa-eD-uqH"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu0-RD-nc7">
                                         <rect key="frame" x="0.0" y="180" width="334" height="20.5"/>
@@ -172,6 +183,13 @@
                         <viewLayoutGuide key="safeArea" id="Nof-OD-Skg"/>
                     </view>
                     <navigationItem key="navigationItem" id="SE3-aQ-uB0"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="Eu0-RD-nc7" id="LLU-Wt-FWs"/>
+                        <outlet property="loginButton" destination="gs7-J4-utj" id="ZlD-DN-uKz"/>
+                        <outlet property="loginTapped" destination="gs7-J4-utj" id="B4j-na-w2g"/>
+                        <outlet property="passwordTextField" destination="QPO-62-Iu4" id="k6C-Pc-BXc"/>
+                        <outlet property="userNameTextField" destination="73N-rK-vSf" id="VpT-7q-nwy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GH6-PN-glO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
