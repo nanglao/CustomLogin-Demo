@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4913959524F6A0F800C15B21 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4913959424F6A0F800C15B21 /* Utilities.swift */; };
 		4974632A24F6086500073707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974632924F6086500073707 /* AppDelegate.swift */; };
 		4974632C24F6086500073707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974632B24F6086500073707 /* SceneDelegate.swift */; };
 		4974632E24F6086500073707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974632D24F6086500073707 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4913959424F6A0F800C15B21 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4974632624F6086500073707 /* CustomLogin Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomLogin Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4974632924F6086500073707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4974632B24F6086500073707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4913959324F69EFB00C15B21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4913959424F6A0F800C15B21 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4974631D24F6086500073707 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 			children = (
 				4974632924F6086500073707 /* AppDelegate.swift */,
 				4974632B24F6086500073707 /* SceneDelegate.swift */,
+				4913959324F69EFB00C15B21 /* Helpers */,
 				4974634124F6094200073707 /* View Controllers */,
 				4974632F24F6086500073707 /* Main.storyboard */,
 				4974633224F6086800073707 /* Assets.xcassets */,
@@ -157,6 +168,7 @@
 			files = (
 				4974632E24F6086500073707 /* ViewController.swift in Sources */,
 				4974632A24F6086500073707 /* AppDelegate.swift in Sources */,
+				4913959524F6A0F800C15B21 /* Utilities.swift in Sources */,
 				4974633E24F6090500073707 /* SignUpViewController.swift in Sources */,
 				4974634024F6091D00073707 /* LoginViewController.swift in Sources */,
 				4974632C24F6086500073707 /* SceneDelegate.swift in Sources */,
