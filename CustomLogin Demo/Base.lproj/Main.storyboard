@@ -50,6 +50,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Na-5i-9u1"/>
+                    <connections>
+                        <outlet property="loginButton" destination="rl2-IZ-VHa" id="3v0-gt-vjl"/>
+                        <outlet property="signUpButton" destination="lGV-PR-pY9" id="bFX-z8-W3v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +162,7 @@
                                         </constraints>
                                         <state key="normal" title="LOGIN"/>
                                         <connections>
-                                            <action selector="loginTapped:" destination="qb9-gW-na9" eventType="touchUpInside" id="HWa-eD-uqH"/>
+                                            <action selector="loginTapped:" destination="qb9-gW-na9" eventType="touchUpInside" id="EqG-pk-g1Z"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu0-RD-nc7">

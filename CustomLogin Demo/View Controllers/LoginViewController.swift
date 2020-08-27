@@ -23,9 +23,20 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpElements()
     }
     
-
+    func setUpElements() {
+        
+        //Hide the error label
+        errorLabel.alpha = 0
+        
+        //Style the elements
+        Utilities.styleTextField(userNameTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(loginButton)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -36,7 +47,6 @@ class LoginViewController: UIViewController {
     }
     */
 
-    
     @IBAction func loginTapped(_ sender: Any) {
     }
     
